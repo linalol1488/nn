@@ -1,32 +1,28 @@
-from random import *
-r = randint(1,10)
-g = 3
-print("как вы думаете,какое число загадано?")
-h = int(input())
-while h < 1 or h > 10:
-    print("введите число от 1 до 10")
-    h = int(input())
-while True:
-    if r > h:
-        print("загаданное число больше")
-        g = g - 1
-        if g == 0:
-            print("у вас осталось 0 попыток,вы проиграли(")
-            break
-        else:
-            print("у вас осталось ", g, " попыток")
-            print("как вы думаете,какое число загадано?")
-            h = int(input())
-    elif r < h:
-        print("загаданное число меньше")
-        g = g - 1
-        if g == 0:
-            print("у вас осталось 0 попыток,вы проиграли(")
-            break
-        else:
-            print("у вас осталось ", g, " попыток")
-            print("как вы думаете,какое число загадано?")
-            h = int(input())
-    elif r == h:
-        print("вы выиграли!онец игры")
-        break
+a = [4, 5, 6, 7, 8, 1]
+print(a[-1])
+
+print(a[-1])
+for i in range(3):
+    print(i)
+print(a)
+
+count1 = 0
+count2 = 0
+for i in range(len(a)):
+    if a[i] % 2 == 0:
+        print(a[i])
+        count2 += 1
+    if a[i] % 2 == 1:
+        count1 += a[i]
+print(a)
+print(count1)
+print(count2)
+
+
+s = [5, 4, 5, 3, 2, 5, 5, 4, 5, 4, 3, 5,]
+j = 0
+for i in range(len(s)):
+    j = j + s[i]
+j = j/len(s)
+print(j)
+
